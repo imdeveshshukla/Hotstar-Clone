@@ -1,12 +1,63 @@
 body{
     background-color: #0f1014;
 }
+
+/* Navigation Bar CSS */
 .navbar{
     background-color: #0f1014;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.logoImg{
+    align-self: center;
+    width: 6%;
+    height: 6%;
+}
+.navitems{
+    align-self: center;
+      
+}
+.navlinks{
+    font-size: 25px;
+    margin: 15px;
+    color: wheat;
     display: inline;
 }
+.endNav{
+    padding-inline-end: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+}
 
-.logoImg{
-    width: 7%;
-    height: 7%;
+.searchBar{
+    /* margin-right: 10px; */
+    border: none;
+    /* padding: 1%; */
+    border-bottom: 1px solid snow;
+    background-color: #0f1014;
+    font-size: 20px;
+}
+.subBtn{
+    /* margin-right: 10px; */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+    background-color: rgb(54, 144, 180);
+    width: 100px;
+    height: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.logBtn{
+    font-size: 23px;
 }
