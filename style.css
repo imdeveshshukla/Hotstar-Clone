@@ -5,10 +5,7 @@ body{
     background-color: #0f1014;
     display: inline;
 }
-li{
-    display: inline;
-    padding-left: 2px;
-}
+
 .logoImg{
     width: 7%;
     height: 7%;
