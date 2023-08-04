@@ -1,13 +1,15 @@
-body{
+*{
     background-color: #0f1014;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
 /* Navigation Bar CSS */
 .navbar{
     background-color: #0f1014;
     display: flex;
-    position: fixed;
-    width: 100%;
+    /* position: fixed; */ 
+    width: 100vw;
     flex-wrap: wrap;
     align-items: center;
     text-transform: uppercase;
@@ -15,49 +17,87 @@ body{
 }
 .logoImg{
     align-self: center;
-    width: 6%;
+    width: 150px;
     height: 6%;
 }
 .navitems{
-    align-self: center;
-      
+    margin-right: auto;
+    padding-top: 5px;
+    display: flex;
 }
 .navlinks{
-    font-size: 25px;
+    font-size: 24px;
     margin: 15px;
     color: wheat;
     display: inline;
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
 }
 .endNav{
     padding-inline-end: 10px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-right: 10px;
+    gap: 20px;
+    margin-right: 15px;
 }
 
 .searchBar{
-    /* margin-right: 10px; */
     border: none;
-    /* padding: 1%; */
     border-bottom: 1px solid snow;
     background-color: #0f1014;
     font-size: 20px;
 }
 .subBtn{
-    /* margin-right: 10px; */
     border: none;
     border-radius: 5px;
     color: white;
-    
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Inter';
     background-color: rgb(54, 144, 180);
-    width: 100px;
-    height: 30px;
-}
-a{
-    color: white;
-    text-decoration: none;
+    width: 150px;
+    height: 40px;
 }
 .logBtn{
-    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navitems{
+        flex-direction: column;
+    }
+    .endNav{
+        display: flex;
+        flex-direction: column;
+    }
+    .searchBar{
+        display: none;
+    }
+}
+
+/* SecondBOx */
+
+.secondBox{
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 200px;
+    
+}
+.secImg{
+    width: 18rem;
+    height: 10rem;
+    z-index: 0;
+}
+.secImg1:hover{
+    
 }
