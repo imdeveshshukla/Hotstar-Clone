@@ -2,13 +2,23 @@
     background-color: #0f1014;
     font-family: 'Inter', sans-serif;
     margin: 0;
+    padding: 0;
 }
-
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
 /* Navigation Bar CSS */
 .navbar{
-    background-color: #0f1014;
+    background-color: #0f101450;
     display: flex;
-    /* position: fixed; */ 
+    /* position: fixed; */
+    top: 0;
+    z-index: 1;
     width: 100vw;
     flex-wrap: wrap;
     align-items: center;
@@ -19,6 +29,7 @@
     align-self: center;
     width: 150px;
     height: 6%;
+    padding-left: 20px;
 }
 .navitems{
     margin-right: auto;
@@ -82,22 +93,91 @@
         display: none;
     }
 }
+/* Carousel CSS */
+.Carousel{
+    display: block;
+    width: 90%;
+    height: fit-content;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 50px;
+    height: 100%;
+
+}
+.gallery::-webkit-scrollbar {   /*for Chrome*/
+    display: none;
+}
+.carImg{
+    width: 80%;
+    height: 50rem;
+
+}
+
 
 /* SecondBOx */
 
 .secondBox{
     display: inline-flex;
     justify-content: center;
+    /* flex-wrap: wrap; */
     gap: 20px;
-    width: 100%;
-    height: 200px;
-    
+    width: 75%;
+    height: 180px;    
+
+}
+
+.Card1{
+    position: relative;
+    width: 18rem;
+    height: 10rem;
+    z-index: 0;
+
 }
 .secImg{
     width: 18rem;
     height: 10rem;
-    z-index: 0;
+    border-radius: 3%;
 }
-.secImg1:hover{
-    
+.secVid
+{
+    top: auto;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+@media (max-width: 600px){
+    .secondBox{
+        flex-direction: column;
+    }
+}
+
+/* Third Box CSS */
+.thirdBox{
+    display: inline-flex;
+    width: 75%;
+    flex-direction: column;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.thirdBox::-webkit-scrollbar {   /*for Chrome*/
+    display: none;
+}
+.thirdBoxHead{
+    align-self: flex-start;
+    padding-bottom: 20px;
+}
+.Cards2{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+}
+.Cards2Img{
+    width: 12rem;
+    height: 15rem;
+    border-radius: 3%;
 }
