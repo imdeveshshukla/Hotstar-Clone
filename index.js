@@ -57,6 +57,7 @@ list.addEventListener('scroll',()=>{
     console.log(list.scrollLeft);
 });
 var i=0;
+var isHovering = false;
 function scrollX(){
     i = i + 420;
     if(i>5200)
@@ -66,7 +67,21 @@ function scrollX(){
     list.scrollLeft = i;
     console.log("i = "+i);
 }
-setInterval(scrollX, 1000);
+list.addEventListener('mouseover',()=>{
+    isHovering = true;
+});
+list.addEventListener('mouseout',()=>{
+    isHovering = false;
+});
+
+
+setInterval(function(){
+    if(!isHovering)
+    {
+        scrollX();
+    }
+},1000);
+
 const list2 = document.querySelectorAll(".Cards2");
 list2.forEach(card =>{
     card.scrollLeft = 80;

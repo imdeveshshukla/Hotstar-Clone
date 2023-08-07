@@ -4,20 +4,7 @@
     margin: 0;
     padding: 0;
 }
-/* .addAnimation{
-    opacity: 5;
-     transform: translateX(80px); 
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-} */
 
-@keyframes scrollAnimation {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-}
 body{
     width: 100%;
     display: flex;
