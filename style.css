@@ -120,7 +120,7 @@ body{
     gap: 50px;
     height: 100%;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;/* to stop scroller a specific position*/
     /* animation: scrollAnimation 10s linear infinite; */
 
 }
@@ -128,7 +128,7 @@ body{
     display: none;
 }
 .carImg1{
-    scroll-snap-align: center;
+    scroll-snap-align: center;  /*POsition where scroller will stop*/
 }
 .carImg{
     width: 80%;

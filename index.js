@@ -52,12 +52,26 @@ button5.addEventListener("mouseout", function() {
 
 // -------------------For Carouseld ------------------
 const list = document.querySelector(".gallery");
-list.scrollLeft = 1205;
+// list.scrollLeft = 1205;
+list.addEventListener('scroll',()=>{
+    console.log(list.scrollLeft);
+});
+var i=0;
+function scrollX(){
+    i = i + 420;
+    if(i>5200)
+    {
+        i = 0;
+    }
+    list.scrollLeft = i;
+    console.log("i = "+i);
+}
+setInterval(scrollX, 1000);
 const list2 = document.querySelectorAll(".Cards2");
 list2.forEach(card =>{
     card.scrollLeft = 80;
     card.addEventListener("scroll", (event) => {
-        console.log(card.scrollLeft +" ");
+        // console.log(card.scrollLeft +" ");
     });
 
 });
