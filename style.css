@@ -19,7 +19,7 @@ body{
     /* position: fixed; */
     top: 0;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     text-transform: uppercase;
@@ -37,7 +37,7 @@ body{
     display: flex;
 }
 .navlinks{
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 15px;
     color: wheat;
     display: inline;
@@ -58,13 +58,13 @@ body{
     border: none;
     border-bottom: 1px solid snow;
     background-color: #0f1014;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .subBtn{
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Inter';
@@ -75,7 +75,7 @@ body{
 .logBtn{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 @media (max-width: 600px){
@@ -96,7 +96,7 @@ body{
 /* Carousel CSS */
 .Carousel{
     display: block;
-    width: 90%;
+    width: 80%;
     height: fit-content;
 }
 .gallery{
@@ -122,23 +122,23 @@ body{
 .secondBox{
     display: inline-flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     gap: 20px;
     width: 75%;
     height: 180px;    
-
+    padding: 0;
+    margin: 0;
 }
 
 .Card1{
     position: relative;
-    width: 18rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
     z-index: 0;
 
 }
 .secImg{
-    width: 18rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
     border-radius: 3%;
 }
 .secVid
