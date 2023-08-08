@@ -54,7 +54,7 @@ button5.addEventListener("mouseout", function() {
 const list = document.querySelector(".gallery");
 
 list.addEventListener('scroll',()=>{
-    console.log(list.scrollLeft);
+    // console.log(list.scrollLeft);
 });
 var i=0;
 var isHovering = false;
@@ -65,7 +65,7 @@ function scrollX(){
         i = 0;
     }
     list.scrollLeft = i;
-    console.log("i = "+i);
+    // console.log("i = "+i);
 }
 list.addEventListener('mouseover',()=>{
     isHovering = true;
@@ -82,12 +82,12 @@ setInterval(function(){
     }
 },1000);
 
-const list2 = document.querySelectorAll(".Cards2");
-list2.forEach(card =>{
-    card.scrollLeft = 80;
-    card.addEventListener("scroll", (event) => {
-        // console.log(card.scrollLeft +" ");
-    });
+// const list2 = document.querySelectorAll(".Cards2");
+// list2.forEach(card =>{
+//     card.scrollLeft = 80;
+//     card.addEventListener("scroll", (event) => {
+//         // console.log(card.scrollLeft +" ");
+//     });
 
-});
-console.log(list.getElementsByTagName("img")[1]);
+// });
+// console.log(list.getElementsByTagName("img")[1]);
