@@ -52,7 +52,7 @@ button5.addEventListener("mouseout", function() {
 
 // -------------------For Carouseld ------------------
 const list = document.querySelector(".gallery");
-// list.scrollLeft = 1205;
+
 list.addEventListener('scroll',()=>{
     console.log(list.scrollLeft);
 });
