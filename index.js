@@ -91,3 +91,7 @@ setInterval(function(){
 
 // });
 // console.log(list.getElementsByTagName("img")[1]);
+
+//I was sick for 2 days thats why not able create new project 
+//Just don't want break streak in github
+//Just want to flex 
